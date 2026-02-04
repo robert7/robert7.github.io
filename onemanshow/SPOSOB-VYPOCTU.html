@@ -1,0 +1,299 @@
+<h1 id="spôsob-výpočtu---slovenská-kalkulačka-daní-2026">Spôsob výpočtu
+- Slovenská kalkulačka daní 2026</h1>
+<p>Tento dokument vysvetľuje podrobný spôsob výpočtu všetkých výsledkov
+v kalkulačke daní pre slovenské s.r.o. na rok 2026.</p>
+<h2 id="obsah">Obsah</h2>
+<ol type="1">
+<li><a href="#1-výpočet-nákladov-na-zamestnanca">Výpočet nákladov na
+zamestnanca</a></li>
+<li><a href="#2-výpočet-zisku-a-dane-z-príjmu-právnickej-osoby">Výpočet
+zisku a dane z príjmu právnickej osoby</a></li>
+<li><a href="#3-výpočet-dividend">Výpočet dividend</a></li>
+<li><a href="#4-príklad-výpočtu">Príklad výpočtu</a></li>
+</ol>
+<hr />
+<h2 id="výpočet-nákladov-na-zamestnanca">1. Výpočet nákladov na
+zamestnanca</h2>
+<h3 id="odvody-zamestnanca-14.4-celkom">1.1 Odvody zamestnanca (14.4%
+celkom)</h3>
+<p>Zamestnanec platí zo svojej hrubej mzdy:</p>
+<p><strong>Sociálne poistenie: 9.4%</strong> (strop €16 764/mesiac)</p>
+<ul>
+<li>Dôchodkové poistenie: 4%</li>
+<li>Invalidné poistenie: 3%</li>
+<li>Nemocenské poistenie: 1,4%</li>
+<li>Poistenie v nezamestnanosti: 1%</li>
+<li>Rezervný fond: 0% (neplatí zamestnanec, len zamestnávateľ)</li>
+</ul>
+<p><strong>Zdravotné poistenie: 5%</strong> (bez stropu)</p>
+<p><strong>Vzorec:</strong></p>
+<pre class="text"><code>Ak hrubá mzda ≤ €16 764:
+    Sociálne poistenie = hrubá mzda × 9.4%
+    Zdravotné poistenie = hrubá mzda × 5%
+
+Ak hrubá mzda &gt; €16 764:
+    Sociálne poistenie = €16 764 × 9.4% = €1 575,82
+    Zdravotné poistenie = hrubá mzda × 5%
+
+Celkové odvody zamestnanca = sociálne + zdravotné</code></pre>
+<h3 id="daňový-základ">1.2 Daňový základ</h3>
+<pre class="text"><code>Daňový základ = hrubá mzda - odvody zamestnanca</code></pre>
+<h3 id="nezdaniteľná-časť-základu-dane">1.3 Nezdaniteľná časť základu
+dane</h3>
+<p>Ak je daňový základ ≤ €2 173,59, zamestnanec má nárok na nezdaniteľnú
+časť €497,23/mesiac.</p>
+<pre class="text"><code>Ak daňový základ ≤ €2 173,59:
+    Nezdaniteľná časť = €497,23
+Inak:
+    Nezdaniteľná časť = €0</code></pre>
+<h3 id="progresívna-daň-z-príjmu">1.4 Progresívna daň z príjmu</h3>
+<p>Daň sa počíta na ročnom základe, potom sa vydelí 12 pre mesačnú
+daň.</p>
+<p><strong>Zdaniteľný príjem za rok:</strong></p>
+<pre class="text"><code>Mesačný zdaniteľný príjem = daňový základ - nezdaniteľná časť
+Ročný zdaniteľný príjem = mesačný × 12</code></pre>
+<p><strong>Daňové pásma (2026):</strong> - <strong>19%</strong> do €43
+983,32 ročne - <strong>25%</strong> od €43 983,32 do €60 349,21 ročne -
+<strong>30%</strong> od €60 349,21 do €75 010,32 ročne -
+<strong>35%</strong> nad €75 010,32 ročne</p>
+<p><strong>Výpočet dane:</strong></p>
+<pre><code>Daň v pásme 1 = min(ročný príjem, €43 983,32) × 19%
+Daň v pásme 2 = min(max(ročný príjem - €43 983,32, 0), €16 365,89) × 25%
+Daň v pásme 3 = min(max(ročný príjem - €60 349,21, 0), €14 661,11) × 30%
+Daň v pásme 4 = max(ročný príjem - €75 010,32, 0) × 35%
+
+Celková ročná daň = daň 1 + daň 2 + daň 3 + daň 4
+Mesačná daň = ročná daň / 12</code></pre>
+<h3 id="čistá-mzda">1.5 Čistá mzda</h3>
+<pre><code>Čistá mzda = daňový základ - mesačná daň</code></pre>
+<h3 id="odvody-zamestnávateľa-362-celkom">1.6 Odvody zamestnávateľa
+(36,2% celkom)</h3>
+<p>Zamestnávateľ platí navyše k hrubej mzde:</p>
+<p><strong>Sociálne poistenie: 25,2%</strong> (strop €16 764/mesiac) -
+Dôchodkové poistenie: 14% - Invalidné poistenie: 3% - Nemocenské
+poistenie: 1,4% - Poistenie v nezamestnanosti: 1% - Garančné poistenie:
+0,25% - Úrazové poistenie: 0,8% - Rezervný fond solidarity: 4,75%</p>
+<p><strong>Zdravotné poistenie: 11%</strong> (bez stropu)</p>
+<p><strong>Vzorec:</strong></p>
+<pre><code>Ak hrubá mzda ≤ €16 764:
+    Sociálne poistenie = hrubá mzda × 25,2%
+    Zdravotné poistenie = hrubá mzda × 11%
+
+Ak hrubá mzda &gt; €16 764:
+    Sociálne poistenie = €16 764 × 25,2% = €4 224,53
+    Zdravotné poistenie = hrubá mzda × 11%
+
+Celkové odvody zamestnávateľa = sociálne + zdravotné</code></pre>
+<h3 id="celkové-náklady-na-zamestnanca">1.7 Celkové náklady na
+zamestnanca</h3>
+<pre><code>Celkové náklady = hrubá mzda + odvody zamestnávateľa</code></pre>
+<hr />
+<h2 id="výpočet-zisku-a-dane-z-príjmu-právnickej-osoby">2. Výpočet zisku
+a dane z príjmu právnickej osoby</h2>
+<h3 id="výpočet-zisku">2.1 Výpočet zisku</h3>
+<pre><code>Celkové náklady na mzdy = súčet (hrubá mzda + odvody zamestnávateľa) pre všetkých zamestnancov
+Zisk = mesačné príjmy - mesačné výdavky - celkové náklady na mzdy</code></pre>
+<h3 id="určenie-daňovej-sadzby">2.2 Určenie daňovej sadzby</h3>
+<p>Sadzba dane z príjmu právnickej osoby závisí od <strong>ročného
+obratu</strong> (nie zisku):</p>
+<pre><code>Ročný obrat = mesačný príjem × 12
+
+Ak ročný obrat ≤ €100 000:
+    Sadzba = 10%
+Ak ročný obrat &gt; €100 000 a ≤ €5 000 000:
+    Sadzba = 21%
+Ak ročný obrat &gt; €5 000 000:
+    Sadzba = 24%</code></pre>
+<h3 id="výpočet-dane">2.3 Výpočet dane</h3>
+<pre><code>Ak zisk &gt; 0:
+    Daň z príjmu PO = zisk × sadzba
+Inak:
+    Daň z príjmu PO = 0
+
+Zisk po zdanení = zisk - daň z príjmu PO</code></pre>
+<p><strong>Poznámka:</strong> Daň sa platí len z kladného zisku. Pri
+strate alebo nulovom zisku sa daň neplatí.</p>
+<hr />
+<h2 id="výpočet-dividend">3. Výpočet dividend</h2>
+<h3 id="výpočet-čistého-dividendu-pre-majiteľa">3.1 Výpočet čistého
+dividendu pre majiteľa</h3>
+<pre><code>Disponibilný zisk = zisk po zdanení dane z príjmu PO
+Daň z dividend = disponibilný zisk × 7%
+Zdravotné poistenie = €0 (zisky po roku 2017 sú oslobodené)
+Čistý dividend = disponibilný zisk - daň z dividend - zdravotné poistenie</code></pre>
+<p><strong>Poznámka:</strong> Pre zisky vytvorené po roku 2017 sa
+zdravotné poistenie neplatí. Pre staršie zisky by sa uplatnilo dodatočné
+zdravotné poistenie.</p>
+<hr />
+<h2 id="príklad-výpočtu">4. Príklad výpočtu</h2>
+<h3 id="vstupné-údaje">Vstupné údaje:</h3>
+<ul>
+<li>Mesačný príjem: <strong>€10 000</strong></li>
+<li>Mesačné výdavky: <strong>€3 000</strong></li>
+<li>Počet zamestnancov: <strong>1</strong></li>
+<li>Hrubá mzda: <strong>€2 000</strong></li>
+</ul>
+<h3 id="krok-1-výpočet-nákladov-na-zamestnanca">Krok 1: Výpočet nákladov
+na zamestnanca</h3>
+<p><strong>Odvody zamestnanca:</strong> - Sociálne poistenie: €2 000 ×
+9.4% = <strong>€188</strong> - Zdravotné poistenie: €2 000 × 5% =
+<strong>€100</strong> - Celkom: <strong>€288</strong></p>
+<p><strong>Daňový základ:</strong> - Daňový základ = €2 000 - €288 =
+<strong>€1 712</strong></p>
+<p><strong>Nezdaniteľná časť:</strong> - €1 712 ≤ €2 173,59, preto
+nezdaniteľná časť = <strong>€497,23</strong></p>
+<p><strong>Daň z príjmu:</strong> - Mesačný zdaniteľný príjem = €1 712 -
+€497,23 = <strong>€1 214,77</strong> - Ročný zdaniteľný príjem = €1
+214,77 × 12 = <strong>€14 577,24</strong> - Daň (celá v pásme 19%): €14
+577,24 × 19% = <strong>€2 769,68</strong> ročne - Mesačná daň: €2 769,68
+/ 12 = <strong>€230,81</strong></p>
+<p><strong>Čistá mzda:</strong> - Čistá mzda = €1 712 - €230,81 =
+<strong>€1 481,19</strong></p>
+<p><strong>Odvody zamestnávateľa:</strong> - Sociálne poistenie: €2 000
+× 25,2% = <strong>€504</strong> - Zdravotné poistenie: €2 000 × 11% =
+<strong>€220</strong> - Celkom: <strong>€724</strong></p>
+<p><strong>Celkové náklady:</strong> - Celkové náklady = €2 000 + €724 =
+<strong>€2 724</strong></p>
+<h3 id="krok-2-výpočet-zisku-a-dane-z-príjmu-po">Krok 2: Výpočet zisku a
+dane z príjmu PO</h3>
+<p><strong>Zisk:</strong> - Zisk = €10 000 - €3 000 - €2 724 =
+<strong>€4 276</strong></p>
+<p><strong>Daňová sadzba:</strong> - Ročný obrat = €10 000 × 12 =
+<strong>€120 000</strong> - €100 000 &lt; €120 000 ≤ €5 000 000, preto
+sadzba = <strong>21%</strong></p>
+<p><strong>Daň z príjmu PO:</strong> - Daň = €4 276 × 21% =
+<strong>€897,96</strong> - Zisk po zdanení = €4 276 - €897,96 =
+<strong>€3 378,04</strong></p>
+<h3 id="krok-3-výpočet-dividend">Krok 3: Výpočet dividend</h3>
+<p><strong>Čistý dividend:</strong> - Disponibilný zisk = <strong>€3
+378,04</strong> - Daň z dividend: €3 378,04 × 7% =
+<strong>€236,46</strong> - Zdravotné poistenie = <strong>€0</strong> -
+Čistý dividend = €3 378,04 - €236,46 - €0 = <strong>€3
+141,58</strong></p>
+<h3 id="zhrnutie-výsledkov">Zhrnutie výsledkov:</h3>
+<table>
+<thead>
+<tr>
+<th>Položka</th>
+<th>Suma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Zamestnanec</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Hrubá mzda</td>
+<td>€2 000,00</td>
+</tr>
+<tr>
+<td>Odvody zamestnanca</td>
+<td>-€288,00</td>
+</tr>
+<tr>
+<td>Daň z príjmu</td>
+<td>-€230,81</td>
+</tr>
+<tr>
+<td><strong>Čistá mzda</strong></td>
+<td><strong>€1 481,19</strong></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Firma</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Príjmy</td>
+<td>€10 000,00</td>
+</tr>
+<tr>
+<td>Výdavky</td>
+<td>-€3 000,00</td>
+</tr>
+<tr>
+<td>Náklady na zamestnancov</td>
+<td>-€2 724,00</td>
+</tr>
+<tr>
+<td>Zisk</td>
+<td>€4 276,00</td>
+</tr>
+<tr>
+<td>Daň z príjmu PO (21%)</td>
+<td>-€897,96</td>
+</tr>
+<tr>
+<td><strong>Zisk po zdanení</strong></td>
+<td><strong>€3 378,04</strong></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Majiteľ</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Disponibilný zisk</td>
+<td>€3 378,04</td>
+</tr>
+<tr>
+<td>Daň z dividend (7%)</td>
+<td>-€236,46</td>
+</tr>
+<tr>
+<td><strong>Čistý dividend</strong></td>
+<td><strong>€3 141,58</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="overenie-výpočtu">Overenie výpočtu</h2>
+<p>Na overenie správnosti výpočtu môžete použiť tento postup:</p>
+<ol type="1">
+<li><p><strong>Skontrolujte odvody zamestnanca:</strong> Musia byť 14.4%
+z hrubej mzdy (9.4% sociálne max €1 575,82 + 5% zdravotné bez
+limitu)</p></li>
+<li><p><strong>Skontrolujte odvody zamestnávateľa:</strong> Musia byť
+36,2% z hrubej mzdy (25,2% sociálne max €4 224,53 + 11% zdravotné bez
+limitu)</p></li>
+<li><p><strong>Skontrolujte daňový základ:</strong> Hrubá mzda - odvody
+zamestnanca</p></li>
+<li><p><strong>Skontrolujte nezdaniteľnú časť:</strong> €497,23 len ak
+je daňový základ ≤ €2 173,59</p></li>
+<li><p><strong>Skontrolujte progresívnu daň:</strong> Počíta sa ročne a
+delí 12</p></li>
+<li><p><strong>Skontrolujte sadzbu dane z príjmu PO:</strong> Závisí od
+ročného obratu (príjem × 12), nie od zisku</p></li>
+<li><p><strong>Skontrolujte daň z dividend:</strong> 7% zo zisku po
+zdanení dane z príjmu PO</p></li>
+</ol>
+<hr />
+<h2 id="právne-poznámky">Právne poznámky</h2>
+<ul>
+<li>Všetky hodnoty sú zaokrúhlené na 2 desatinné miesta (centy)</li>
+<li>Výpočty sú založené na slovenskom daňovom zákone platnom pre rok
+2026</li>
+<li>Táto kalkulačka je len informatívna a nenahradí profesionálnu daňovú
+poradňu</li>
+<li>Pre presné výpočty a podanie daňových priznaní konzultujte daňového
+poradcu alebo účtovníka</li>
+</ul>
+<hr />
+<h2 id="legislatívne-odkazy">Legislatívne odkazy</h2>
+<ul>
+<li>Zákon č. 595/2003 Z. z. o dani z príjmov (Daň z príjmu fyzických
+osôb - progresívne pásma)</li>
+<li>Zákon č. 595/2003 Z. z. o dani z príjmov (Daň z príjmu právnickej
+osoby)</li>
+<li>Zákon č. 461/2003 Z. z. o sociálnom poistení (Odvody sociálneho
+poistenia)</li>
+<li>Zákon č. 580/2004 Z. z. o zdravotnom poistení (Odvody zdravotného
+poistenia)</li>
+</ul>
