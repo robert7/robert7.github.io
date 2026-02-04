@@ -1,5 +1,4 @@
-<h1 id="spôsob-výpočtu---slovenská-kalkulačka-daní-2026">Spôsob výpočtu
-- Slovenská kalkulačka daní 2026</h1>
+<h1 id="spôsob-výpočtu">Spôsob výpočtu</h1>
 <p>Tento dokument vysvetľuje podrobný spôsob výpočtu všetkých
 výsledkov.</p>
 <h2 id="výpočet-nákladov-na-zamestnanca">1. Výpočet nákladov na
@@ -110,7 +109,33 @@ Zdravotné poistenie = €0 (zisky po roku 2017 sú oslobodené)
 <p><strong>Poznámka:</strong> Pre zisky vytvorené po roku 2017 sa
 zdravotné poistenie neplatí. Pre staršie zisky by sa uplatnilo dodatočné
 zdravotné poistenie.</p>
-<h2 id="príklad-výpočtu">4. Príklad výpočtu</h2>
+<h2 id="celkový-čistý-ročný-príjem-a-reálne-daňové-zaťaženie">4. Celkový
+čistý ročný príjem a reálne daňové zaťaženie</h2>
+<p>Aplikácia zobrazuje súhrnný výsledok, ktorý kombinuje príjmy všetkých
+zamestnancov a majiteľa.</p>
+<h3 id="celkový-čistý-ročný-príjem">4.1 Celkový čistý ročný príjem</h3>
+<pre class="text"><code>Celkový čistý ročný príjem = ročné čisté mzdy (všetci zamestnanci) + ročné čisté dividendy (majiteľ)</code></pre>
+<p>Toto je skutočná suma peňazí, ktorá sa ročne vyplatí z firmy vo forme
+miezd a dividend.</p>
+<h3 id="zisk-firmy-bez-miezd">4.2 Zisk firmy bez miezd</h3>
+<pre class="text"><code>Zisk firmy bez miezd = (mesačný príjem - mesačné výdavky) × 12</code></pre>
+<p>Toto je celkový príjem firmy pred zaplatením miezd a všetkých daní a
+odvodov.</p>
+<h3 id="reálne-celkové-daňové-a-odvodové-zaťaženie">4.3 Reálne celkové
+daňové a odvodové zaťaženie</h3>
+<p>Tento ukazovateľ vyjadruje, aký podiel z celkového zisku firmy ide na
+dane a odvody (namiesto výplat zamestnancom a majiteľovi):</p>
+<pre class="text"><code>Reálne zaťaženie (%) = (Zisk firmy bez miezd - Celkový čistý ročný príjem) / Zisk firmy bez miezd × 100%</code></pre>
+<p><strong>Čo zahŕňa toto zaťaženie:</strong> - Odvody zamestnanca
+(14,4%) - Odvody zamestnávateľa (36,2%) - Progresívna daň z príjmu
+fyzických osôb (19-35%) - Daň z príjmu právnickej osoby (10/21/24%) -
+Daň z dividend (7%)</p>
+<p><strong>Príklad:</strong> Ak je zisk firmy bez miezd €100 000 ročne a
+celkový čistý príjem je €55 000, reálne daňové zaťaženie je:</p>
+<pre><code>(€100 000 - €55 000) / €100 000 × 100% = 45%</code></pre>
+<p>To znamená, že 45% z celkového zisku ide na dane a odvody, a 55% sa
+skutočne vyplatí zamestnancom a majiteľovi.</p>
+<h2 id="príklad-výpočtu">5. Príklad výpočtu</h2>
 <h3 id="vstupné-údaje">Vstupné údaje:</h3>
 <ul>
 <li>Mesačný príjem: <strong>€10 000</strong></li>
@@ -118,8 +143,8 @@ zdravotné poistenie.</p>
 <li>Počet zamestnancov: <strong>1</strong></li>
 <li>Hrubá mzda: <strong>€2 000</strong></li>
 </ul>
-<h3 id="krok-1-výpočet-nákladov-na-zamestnanca">Krok 1: Výpočet nákladov
-na zamestnanca</h3>
+<h3 id="krok-1-výpočet-nákladov-na-zamestnanca-podľa-sekcie-1">Krok 1:
+Výpočet nákladov na zamestnanca (podľa sekcie 1)</h3>
 <p><strong>Odvody zamestnanca:</strong></p>
 <ul>
 <li>Sociálne poistenie: €2 000 × 9.4% = <strong>€188</strong></li>
@@ -159,8 +184,8 @@ na zamestnanca</h3>
 <ul>
 <li>Celkové náklady = €2 000 + €724 = <strong>€2 724</strong></li>
 </ul>
-<h3 id="krok-2-výpočet-zisku-a-dane-z-príjmu-po">Krok 2: Výpočet zisku a
-dane z príjmu PO</h3>
+<h3 id="krok-2-výpočet-zisku-a-dane-z-príjmu-po-podľa-sekcie-2">Krok 2:
+Výpočet zisku a dane z príjmu PO (podľa sekcie 2)</h3>
 <p><strong>Zisk:</strong></p>
 <ul>
 <li>Zisk = €10 000 - €3 000 - €2 724 = <strong>€4 276</strong></li>
@@ -176,7 +201,8 @@ dane z príjmu PO</h3>
 <li>Daň = €4 276 × 21% = <strong>€897,96</strong></li>
 <li>Zisk po zdanení = €4 276 - €897,96 = <strong>€3 378,04</strong></li>
 </ul>
-<h3 id="krok-3-výpočet-dividend">Krok 3: Výpočet dividend</h3>
+<h3 id="krok-3-výpočet-dividend-podľa-sekcie-3">Krok 3: Výpočet dividend
+(podľa sekcie 3)</h3>
 <p><strong>Čistý dividend:</strong></p>
 <ul>
 <li>Disponibilný zisk = <strong>€3 378,04</strong></li>
@@ -195,7 +221,12 @@ Odvody zamestnanca | -€288,00 | | Daň z príjmu | -€230,81 | |
 Daň z príjmu PO (21%) | -€897,96 | | <strong>Zisk po zdanení</strong> |
 <strong>€3 378,04</strong> | | | | | <strong>Majiteľ</strong> | | |
 Disponibilný zisk | €3 378,04 | | Daň z dividend (7%) | -€236,46 | |
-<strong>Čisté dividendy</strong> | <strong>€3 141,58</strong> |</p>
+<strong>Čisté dividendy</strong> | <strong>€3 141,58</strong> | | | | |
+<strong>Celkový súhrn (ročne)</strong> | | | Ročné čisté mzdy | €17
+774,28 | | Ročné čisté dividendy | €37 699,00 | | <strong>Celkový čistý
+ročný príjem</strong> | <strong>€55 473,28</strong> | | Zisk firmy bez
+miezd | €84 000,00 | | <strong>Reálne celkové daňové zaťaženie</strong>
+| <strong>33.9%</strong> |</p>
 <h2 id="overenie-výpočtu">Overenie výpočtu</h2>
 <p>Na overenie správnosti výpočtu môžete použiť tento postup:</p>
 <ol type="1">
